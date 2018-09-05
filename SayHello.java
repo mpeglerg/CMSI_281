@@ -1,3 +1,6 @@
+//Assignment 1
+//File has user input his/her name and prints out Hello and the name
+
 import java.util.Scanner;
 
 public class SayHello {

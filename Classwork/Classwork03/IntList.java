@@ -26,9 +26,8 @@
             size++;
             return true;
          } else {
-            // what should we do here, if there's no room?
+            throw new ArrayIndexOutOfBoundsException( "List is full.");
          }
-         return false;
       }
 
       public boolean prepend ( int valueToAdd ) {

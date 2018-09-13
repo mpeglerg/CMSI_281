@@ -41,14 +41,12 @@
       } 
 
       public boolean insertValueAtIndex( int value, int index ) {
-         if( size >= theList.length ) {
+         if( index >= theList.length ) {
             expandTheList();
-         } else if( index > size ) {
-            size += STARTING_SIZE;
          } else if( index < 0 ) {
             throw new ArrayIndexOutOfBoundsException( "The index value is too small");
          } else {
-            size = size +1;
+            size = size + 1;
             for (int i = size - 1; i > index; i--) {
               theList[i] = theList[i - 1]; 
             }
@@ -109,10 +107,10 @@
          System.out.println( list.removeValueAtIndex( 3 ) );   // should return the value 7
          System.out.println( list.getValueAtIndex( 3 ) );      // should return the value 11
          list.insertValueAtIndex( 9, 4);
-         System.out.println( list.getValueAtIndex( 4 ) );
-         System.out.println( list.getValueAtIndex( 6 ) );
+         System.out.println( list.getValueAtIndex( 4 ) );      // should return the value 9
+         System.out.println( list.getValueAtIndex( 7 ) );      // should return the value 19
          list.prepend ( 5 );
-         System.out.println( list.getValueAtIndex( 0 ) );
+         System.out.println( list.getValueAtIndex( 0 ) );      //should return the value 5
 
       }
    }

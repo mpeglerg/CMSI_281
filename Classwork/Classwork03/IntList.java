@@ -13,14 +13,13 @@
       public int getValueAtIndex( int index ) throws ArrayIndexOutOfBoundsException {
          if( size == 0 ) {
             throw new ArrayIndexOutOfBoundsException( "The list is empty!" );   // maybe not the best...
-         } else if( index > size ) {
-            throw new ArrayIndexOutOfBoundsException( "The index value is too large!" );   // maybe not the best...
-         } else if( index < 0 ) {
-            throw new ArrayIndexOutOfBoundsException( "The index value is too small");
+         } else if( !checkIndex( index ) ) {
+            throw new ArrayIndexOutOfBoundsException( "The index value is invalid!" );   // maybe not the best...
          } else {
             return theList[index];
          }
       }
+
       public boolean append( int valueToAdd ) {
          if( size < theList.length ) {
             theList[size] = valueToAdd;
@@ -31,6 +30,11 @@
          }
          return false;
       }
+
+      public boolean prepend ( int valueToAdd ) {
+         insertValueAtIndex( valueToAdd, 0 );
+         return true;
+      } 
 
       // we've gotta have this to actually get things to compile
       public boolean insertValueAtIndex( int value, int index ) {
@@ -62,10 +66,8 @@
          int value = theList[index];
          if( size == 0 ) {
             throw new ArrayIndexOutOfBoundsException( "The list is empty!" );   // maybe not the best...
-         } else if( index > size ) {
-            throw new ArrayIndexOutOfBoundsException( "The index value is too large" );
-         } else if( index < 0 ) {
-            throw new ArrayIndexOutOfBoundsException( "The index value is too small");
+         } else if( !checkIndex( index ) ) {
+            throw new ArrayIndexOutOfBoundsException( "The index value is invalid." );
          } else {
             holeFiller( index );
          }
@@ -103,10 +105,11 @@
          System.out.println( list.getValueAtIndex( 7 ) );      // should return the value 19
          System.out.println( list.removeValueAtIndex( 3 ) );   // should return the value 7
          System.out.println( list.getValueAtIndex( 3 ) );      // should return the value 11
-         // System.out.println( list.getValueAtIndex( 18 ) );     // just to see what happens
          list.insertValueAtIndex( 9, 4);
          System.out.println( list.getValueAtIndex( 4 ) );
          System.out.println( list.getValueAtIndex( 6 ) );
+         list.prepend ( 5 );
+         System.out.println( list.getValueAtIndex( 0 ) );
 
       }
    }

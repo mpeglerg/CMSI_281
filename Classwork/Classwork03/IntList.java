@@ -31,16 +31,20 @@
       }
 
       public boolean prepend ( int valueToAdd ) {
-         insertValueAtIndex( valueToAdd, 0 );
-         return true;
+         if ( size < theList.length ) {
+            insertValueAtIndex( valueToAdd, 0 );
+            size++;
+            return true;
+         } else {
+            throw new ArrayIndexOutOfBoundsException( "List is full.");            
+         }
       } 
 
-      // we've gotta have this to actually get things to compile
       public boolean insertValueAtIndex( int value, int index ) {
          if( size >= theList.length ) {
             expandTheList();
          } else if( index > size ) {
-            size = index;
+            size += STARTING_SIZE;
          } else if( index < 0 ) {
             throw new ArrayIndexOutOfBoundsException( "The index value is too small");
          } else {

@@ -35,6 +35,8 @@ public class IntLinkedList {
          throw new IllegalArgumentException();
       }      
       Iterator it = getIteratorAt( index - 1 );
+      Iterator itToDelete = getIteratorAt( index );
+      System.out.println("Data value removed: " + itToDelete.getCurrentInt());
       it.currentNode.next = it.currentNode.next.next;
    }
 

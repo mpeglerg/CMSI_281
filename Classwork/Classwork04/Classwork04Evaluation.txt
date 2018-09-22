@@ -1,0 +1,29 @@
+
+Classwork03 Evaluation
+======================
+
+Nice job on this assignment, with a couple of comments:
+
+Consider testing things a bit more thoroughly...
+
+scores:
+=============================
+IntLinkedList.java
+   insertAt()                 [1 pt]
+   removeAt()                 [1 pt]
+IntLinkeListTester.java
+   added tests to existing    [OPTIONAL 1 pt]
+     none were added other than for the two new methods
+     which is bare minimum so no optional credit
+headers in all files          [2 pt]
+	no headers, zero pts.
+code style                    [1 pt]
+
+total possible points         5 points
+      additional credit       1 point
+
+
+you got 3 out of 5 which is 60% which is a D
+
+Your code works, but you need headers in your files, at
+least something nominal that says what the file does.

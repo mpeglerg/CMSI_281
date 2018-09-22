@@ -1,0 +1,21 @@
+Maya ---
+
+Your repo is not structured correctly.  Please fix it!
+
+You should have a "Homework" folder with folders under it
+that are named for the homework assignments:
+
+CMSI_281
+   |
+   +->  Homework
+            |
+            +->  Homework01
+            |
+            +->  Homework02
+
+and so on, just like you have for your "Classwork" folder.
+
+Thanks!
+
+Regards,
+Dr. Johnson

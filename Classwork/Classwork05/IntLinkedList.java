@@ -1,3 +1,15 @@
+/** ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ *  File name     :  IntLinkedList.java
+ *  Purpose       :  Implements a linked list.
+ *  Author        :  Maya Pegler-Gordon
+ *  Date          :  2018-09-26
+ *  Description   :  Includes methods to display size of list, prepend nodes, insert new nodes, and delete nodes. 
+ *  Notes         :  None
+ *  Warnings      :  None
+ *  Exceptions    :  None
+ * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
 public class IntLinkedList {
 
    private Node head;

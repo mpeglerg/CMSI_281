@@ -1,0 +1,54 @@
+
+Homework03 Evaluation
+======================
+
+Nice work on this assignment!
+Here are a couple of observations and comments:
+
+Be careful about your naming conventions.  Always name your classes
+with an upper-case letter.  This goes for the file name as well.  It
+is convention to do this, there are times when the compiler will NOT
+accept lovercase initial letters, and times when it will.  Also the
+name of the file should match the name of the main class it contains.
+To have a file named "bubbleSort.java" that contains the class named
+"ArrayBub" is confusing and misleading to other programmers.
+
+The escape codes in the Simon game don't actually work on my command
+prompt in Windows 7.  You probably tested it on either windows 10 or
+on a mac, right?  What I see instead is: "←[H←[2J"...
+
+scores:
+=============================
+XXXXX-Sorter.java
+   oddEvenSort implemented                   [1 pt.]
+   compiles                                  [1 pt.]
+   works as advertised                       [1 pt.]
+
+SimonGame.java
+   randomized array                          [1 pt.]
+   display/erase sequences                   [1 pt.]
+   check user's guess against array          [1 pt.]
+   increment letter count each iteration     [1 pt.]
+   play again message on incorrect entry     [1 pt.]
+   compiles                                  [1 pt.]
+   works as advertised                       [1 pt.]
+
+HuffmanCoding.java
+   count character occurrences               [0 pt.]
+   use some sort of queue to build tree      [0 pt.]
+   tree constructed correctly                [0 pt.]
+   message encoded correctly                 [0 pt.]
+   message decoded correctly                 [0 pt.]
+   compiles                                  [0 pt.]
+   works as advertised                       [0 pt.]
+
+Coding style                                 [1 pt.]
+Tests written to test all classes            [1 pt.]
+Headers in all files                         [1 pt.]
+
+Total credit is 13 for Sorter and either Simon or Huffman
+ extra credit is 7 points for other of Simon or Huffman
+-------------------------
+ Grand total is 20 points for all three
+
+you got 13 out of 13 which is 100% which is an A-plus

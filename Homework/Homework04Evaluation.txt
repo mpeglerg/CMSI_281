@@ -1,0 +1,66 @@
+
+Homework04 Evaluation
+======================
+
+Nice job on this assignment...
+Here are a couple of observations and comments:
+
+Your code looks great and thanks for doing headers!
+
+These were from Nico's repo.
+
+There are some problems.  I couldn't get the HashTableAppFolding
+to work.  I used a table size of 193, an initialization of 20 items,
+and when I tried to insert the value 12345 and listed the table
+the values were not in there.  There was no error message.  Yet,
+when I did a find, that came back with the value.  Delete seemed
+to work as well, but I never saw the values in the table listing.
+
+With HashTableApp, same parameters, I inserted the string values
+"this", "is", "a", "string", "to", "hash" but when I listed the 
+contents out none of the strings appeared.
+
+You did write code, though, so I gave you 1/2 credit for it all.
+  
+
+scores:
+=============================
+Tree Traverser
+   inOrderTraverser method implemented       [1 pt.]
+   2 test sets with at least minimal nodes   [2 pt.]
+   produces proper sequences                 [2 pt.]
+
+Priority Queue
+   Queue creation works correctly            [1 pt.]
+   insertion works correctly                 [1 pt.]
+   isFull() works correctly                  [1 pt.]
+   isEmpty() works correctly                 [1 pt.]
+   removal() works correctly                 [1 pt.]
+   heap representation works correctly       [1 pt.]
+
+Linear Probing String Hasher
+   menu works                                [0.5 pt.]
+   shows contents                            [0.5 pt.]
+   hash table created correctly              [0.5 pt.]
+   insertion works correctly                 [0.5 pt.]
+   linear probing works correctly            [0.5 pt.]
+   deletion works correctly                  [0.5 pt.]
+   finding works correctly                   [0.5 pt.]
+
+Digit Folding Hasher
+   menu works                                [0.5 pt.]
+   shows contents                            [0.5 pt.]
+   insertion works correctly                 [0.5 pt.]
+   linear probing works correctly            [0.5 pt.]
+   deletion works correctly                  [0.5 pt.]
+   finding works correctly                   [0.5 pt.]
+
+Coding style                                 [1 pt.]
+Tests written to test all classes            [1 pt.]
+Headers in all files                         [4 pt.]
+
+Total credit is 30 points
+-------------------------
+
+you got 23.5 out of 30 which is 78.33% which is a C-plus.
+
